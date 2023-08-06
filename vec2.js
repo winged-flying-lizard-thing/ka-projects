@@ -34,7 +34,7 @@ var vec2 = (function() {
    * @returns {vec2}
    * construct new 2-component vector
    */
-  vec2 = function(x, y) {
+  var vec2 = function(x, y) {
     return Object.create(vec2.prototype, {
       x: {
         configurable: true,
