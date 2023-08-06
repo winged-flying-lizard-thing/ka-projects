@@ -1,7 +1,7 @@
 /**
  * @class
  * @license
- * a horrible, bloated vector library written in ES5
+ * a terrible, bloated vector library written in ES5
  * 
  * vec2.js 
  * Copyright 2023 TheBlueWyvern
@@ -34,7 +34,7 @@ var vec2 = (function() {
    * @returns {vec2}
    * construct new 2-component vector
    */
-  var vec2 = function(x, y) {
+  vec2 = function(x, y) {
     return Object.create(vec2.prototype, {
       x: {
         configurable: true,
@@ -50,7 +50,7 @@ var vec2 = (function() {
       }
     });
   };
-  vec2 = Object.assign(vec2, {
+  return (vec2 = Object.assign(vec2, {
     // static methods
     /**
      * @static
@@ -242,7 +242,5 @@ var vec2 = (function() {
         return this;
       }
     }
-  });
-  
-  return vec2;
+  }));
 })();
